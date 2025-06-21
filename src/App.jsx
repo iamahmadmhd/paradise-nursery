@@ -3,7 +3,7 @@ import LandingPage from './pages/LandingPage';
 import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import Header from './components/Header';
-import { CartProvider } from './context/CartContext';
+import { CartProvider } from './context/CartSlice';
 
 function App() {
   return (

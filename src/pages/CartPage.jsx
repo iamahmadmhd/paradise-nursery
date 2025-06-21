@@ -1,4 +1,4 @@
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/CartSlice';
 
 function CartPage() {
     const { cartItems, updateQuantity, removeItem } = useCart();

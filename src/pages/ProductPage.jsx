@@ -1,8 +1,8 @@
 import products from '../data/products';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/CartSlice';
 
 function ProductPage() {
-    const { addToCart } = useCart();
+    const { addItem } = useCart();
     const categories = [...new Set(products.map(p => p.category))];
 
     return (
@@ -16,7 +16,7 @@ function ProductPage() {
                                 <img src={product.image} alt={product.name} className="h-40 w-full object-cover mb-2" />
                                 <h3 className="text-lg font-bold">{product.name}</h3>
                                 <p>${product.price.toFixed(2)}</p>
-                                <button onClick={() => addToCart(product)} className="mt-2 bg-green-500 text-white px-4 py-1 rounded">Add to Cart</button>
+                                <button onClick={() => addItem(product)} className="mt-2 bg-green-500 text-white px-4 py-1 rounded">Add to Cart</button>
                             </div>
                         ))}
                     </div>
