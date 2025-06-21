@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <header className="flex justify-between items-center p-4 bg-green-100">
-            <Link to="/products" className="text-xl font-bold">Paradise Nursery</Link>
+            <Link to="/" className="text-xl font-bold">Paradise Nursery</Link>
             <nav className="flex gap-4">
                 <Link to="/">Home</Link>
                 <Link to="/products">Shop</Link>
